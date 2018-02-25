@@ -1,2 +1,2 @@
 # Ancient-Egypt-secrets
-/****TODO****/
+This was our c++ project in Programming one course.
