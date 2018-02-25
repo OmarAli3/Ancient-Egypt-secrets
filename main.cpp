@@ -89,7 +89,6 @@ void check_mainOption(bool pause)
 }
 void Q_and_A()
 {
-    G_over=0;
     game.reset_display(leave_choices);
     game.TrueAnswer(ans);
     game.into_display("Question  :  "+q,9,15);
@@ -121,7 +120,7 @@ void Q_and_A()
 }
 void level_1(int b)
 {
-
+    G_over=0;
     game.reset_display(alll);
     game.display_choices("","",option3+Rank[game.RANK],option4,0);
     while (b>0)
@@ -141,7 +140,7 @@ void level_1(int b)
 }
 void level_2(int b)
 {
-
+    G_over=0;
     game.reset_display(0);
     game.display_image(pyramid_name,p1,4,4);
     Sleep(5000);
@@ -179,7 +178,7 @@ void level_2(int b)
 }
 void level_3(int b)
 {
-
+    G_over=0;
     game.reset_display(0);
     game.display_image(sphinx_name,s1,16,6);
     Sleep(5000);
@@ -218,7 +217,7 @@ void level_3(int b)
 }
 void level_4(int b)
 {
-
+    G_over=0;
     game.reset_display(0);
     game.display_image(lotus_name,L1,18,6);
     Sleep(5000);
@@ -257,7 +256,7 @@ void level_4(int b)
 }
 void level_5(int b)
 {
-
+    G_over=0;
     /**there is no image**/
     ifstream level("level_5.txt");
      while(!level.eof())
@@ -294,7 +293,7 @@ void level_5(int b)
 }
 void level_6(int b)
 {
-
+    G_over=0;
     /**there is no image**/
     ifstream level("level_6.txt");
      while(!level.eof())
